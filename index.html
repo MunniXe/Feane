@@ -1,68 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-</head>
-<body>
-    <nav class="navbar background-light border-bottom">
-        <div class="comtainer-fluid d-flex justify-content-between align-items-center"></div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar border-bottom">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <h1>logo</h1>
+        <ul class="nav justify-content-center flex-grow-1 gap-4">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-dark">Book table</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-3 align-items-center">
+          <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-cart"></i></a>
+          <button class="btn btn-warning btn-lg rounded-pill">
+            Order Online
+          </button>
+        </div>
+      </div>
     </nav>
-    <h1>logo</h1>
-    <ul class="nav justify-content-center flex-grow-1 gap-4">
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Menu</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Book table</a></li>
 
-            <div class="d-flex gap-3 align-items-center">
-                <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-cart"></i></a>
-                <button class="btn btn-warning btn-lg rounded-pill">Order Online</button>
-            </div>
-    </ul>
-    </nav>
-<div id="carousel example indicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselexampleindicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselexampleindicators" data-slide-to="1" class="active"></li>
-        <li data-target="#carouselexampleindicators" data-slide-to="2" class="active"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-items active">
-            <img src="images/image-slider-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Heading1</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis ipsa sit quasi voluptate exercitationem molestiae iusto atque iure, laborum est illum rerum at. Obcaecati porro laborum quidem vero veritatis.</p>
+    <div class="position-relative" style="height: 500px">
+      <img
+        src="images/burger.jpg"
+        class="w-full object-fit-cover"
+        alt="Burger"
+      />
 
-            </div>
+      <!-- Buttons on Left -->
+      <div
+        class="position-absolute start-0 top-50 translate-middle-y ms-4"
+        style="z-index: 10"
+      >
+        <div class="btn-group-vertical" role="group">
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="tab"
+            data-bs-target="#text1"
+          >
+            Button 1
+          </button>
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="tab"
+            data-bs-target="#text2"
+          >
+            Button 2
+          </button>
+          <button
+            type="button"
+            class="btn btn-light"
+            data-bs-toggle="tab"
+            data-bs-target="#text3"
+          >
+            Button 3
+          </button>
         </div>
-        <div class="carousl-item">
-            <img src="burger-slider-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <H5>Heading2</H5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatem esse neque nihil enim obcaecati fugiat praesentium quas facilis ab iste veniam odit! Dolor pariatur, accusantium aperiam laboriosam facilis accusamus?</p> 
-            </div>
+      </div>
+
+      <!-- Text Content on Left -->
+      <div
+        class="position-absolute start-0 top-50 translate-middle-y ps-5 text-white"
+        style="width: 40%; margin-left: 120px"
+      >
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="text1">
+            <h2 class="display-5 fw-bold">Heading1</h2>
+            <p class="lead">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+              perferendis ipsa sit quasi voluptate exercitationem molestiae
+              iusto atque iure, laborum est illum rerum at.
+            </p>
+          </div>
+          <div class="tab-pane fade" id="text2">
+            <h2 class="display-5 fw-bold">Heading2</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, voluptatem esse neque nihil enim obcaecati fugiat
+              praesentium quas facilis ab iste veniam odit!
+            </p>
+          </div>
+          <div class="tab-pane fade" id="text3">
+            <h2 class="display-5 fw-bold">Heading3</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              animi corrupti voluptatem obcaecati omnis consectetur saepe
+              dolorem provident! Sed perferendis ex voluptate.
+            </p>
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="images/image-slider-3.jpg" class="d-block w-1000" alt="...">
-            <h5>heading3</h5>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi corrupti voluptatem obcaecati omnis consectetur saepe dolorem provident! Sed perferendis ex voluptate. Facilis laboriosam quae reprehenderit quis commodi fugiat accusamus.</P>
-        </div>
+      </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselexampleindicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselexampleindicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">next</span>
-    </a>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
