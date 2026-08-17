@@ -3,77 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Feane - Fast Food Restaurant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts for Cursive Accent -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background: url(https://themewagon.github.io/feane/images/hero-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+    </style>
 </head>
-<body>
-    <nav class="navbar background-light border-bottom">
-        <div class="comtainer-fluid d-flex justify-content-between align-items-center"></div>
-    </nav>
-    <h1>logo</h1>
-    <ul class="nav justify-content-center flex-grow-1 gap-4">
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Menu</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-dark">Book table</a></li>
+<body class="bg-light">
 
-            <div class="d-flex gap-3 align-items-center">
-                <a href="#" class="text-dark"><i class="bi bi-search"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-person"></i></a>
-                <a href="#" class="text-dark"><i class="bi bi-cart"></i></a>
-                <button class="btn btn-warning btn-lg rounded-pill">Order Online</button>
+    <!-- HERO HEADER -->
+    <header class="bg-dark text-white pb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold fst-italic" href="#">Feane</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 text-uppercase small">
+                        <li class="nav-item"><a class="nav-link text-warning" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#book">Book Table</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-person-fill fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-cart-fill fs-5"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-search fs-5"></i></a>
+                        <a href="#" class="btn btn-warning rounded-pill text-white fw-medium px-4 ms-2">Order Online</a>
+                    </div>
+                </div>
             </div>
-    </ul>
-    </nav>
-<div id="carousel example indicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselexampleindicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselexampleindicators" data-slide-to="1" class="active"></li>
-        <li data-target="#carouselexampleindicators" data-slide-to="2" class="active"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-items active">
-            <img src="IMAGES/burger and chips.jpg"  class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <div classs="btn-box"></div>
-                <h5>Heading1</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis ipsa sit quasi voluptate exercitationem molestiae iusto atque iure, laborum est illum rerum at. Obcaecati porro laborum quidem vero veritatis.</p>
+        </nav>
 
+        <!-- Hero Content -->
+        <div class="container py-5 my-auto">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold fst-italic mb-3">Fast Food Restaurant</h1>
+                    <p class="text-white mb-4">Doloremque, meae, laborum soluta quam eligendi est voluptatibus quas omnis a reiciendis at quo sit quibusdam eius praesentium nihil in te temporibus.</p>
+                    <a href="#" class="btn btn-warning rounded-pill text-white fw-medium px-4">Order Now</a>
+                </div>
             </div>
         </div>
-        <div class="carousl-item">
-            <img src="image/image-slider-2"  class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <H5>Heading2</H5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, voluptatem esse neque nihil enim obcaecati fugiat praesentium quas facilis ab iste veniam odit! Dolor pariatur, accusantium aperiam laboriosam facilis accusamus?</p> 
+    </header>
+
+    <!-- PROMO BANNERS -->
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white p-4 rounded-3 border-0">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-auto me-4">
+                            <div class="rounded-circle overflow-hidden border border-warning border-4" style="width: 140px; height: 140px;">
+                                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300" class="w-100 h-100 object-fit-cover" alt="Tasty Thursdays">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="fw-normal mb-1" style="font-family: 'Dancing Script', cursive;">Tasty Thursdays</h3>
+                            <h2 class="display-6 fw-bold mb-3">20% <span class="fs-5 fw-normal fst-italic">off</span></h2>
+                            <a href="#" class="btn btn-warning rounded-pill px-4 py-2 text-white fw-bold d-inline-flex align-items-center gap-2">Order Now <i class="bi bi-cart-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card bg-dark text-white p-4 rounded-3 border-0">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-auto me-4">
+                            <div class="rounded-circle overflow-hidden border border-warning border-4" style="width: 140px; height: 140px;">
+                                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=300" class="w-100 h-100 object-fit-cover" alt="Pizza Days">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="fw-normal mb-1" style="font-family: 'Dancing Script', cursive;">Pizza Days</h3>
+                            <h2 class="display-6 fw-bold mb-3">15% <span class="fs-5 fw-normal fst-italic">off</span></h2>
+                            <a href="#" class="btn btn-warning rounded-pill px-4 py-2 text-white fw-bold d-inline-flex align-items-center gap-2">Order Now <i class="bi bi-cart-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="carousel-item">
-            <img src="images/image-slider-3.jpg" class="d-block w-1000" alt="...">
-            <h5>heading3</h5>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti animi corrupti voluptatem obcaecati omnis consectetur saepe dolorem provident! Sed perferendis ex voluptate. Facilis laboriosam quae reprehenderit quis commodi fugiat accusamus.</P>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="container py-5" id="menu">
+        <h2 class="text-center fst-italic fw-bold mb-4">Our Menu</h2>
+
+        <!-- Filter Nav -->
+        <nav class="nav nav-pills justify-content-center mb-5 gap-2">
+            <a class="nav-link active bg-dark rounded-pill px-4 text-white" href="#">All</a>
+            <a class="nav-link rounded-pill px-4 text-dark" href="#">Burger</a>
+            <a class="nav-link rounded-pill px-4 text-dark" href="#">Pizza</a>
+            <a class="nav-link rounded-pill px-4 text-dark" href="#">Pasta</a>
+            <a class="nav-link rounded-pill px-4 text-dark" href="#">Fries</a>
+        </nav>
+
+        <!-- Menu Cards Grid -->
+        <div class="row g-4">
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-white text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f1.png" class="img-fluid mh-100" alt="Delicious Burger">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Burger</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$15</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f2.png" class="img-fluid mh-100" alt="Delicious Pizza">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Pizza</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$20</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f3.png" class="img-fluid mh-100" alt="French Fries">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">French Fries</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$10</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f4.png" class="img-fluid mh-100" alt="Delicious Pasta">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Pasta</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$18</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f5.png" class="img-fluid mh-100" alt="Delicious Burger">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Burger</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$15</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f6.png" class="img-fluid mh-100" alt="Delicious Pizza">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Pizza</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$20</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f7.png" class="img-fluid mh-100" alt="French Fries">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">French Fries</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$10</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f8.png" class="img-fluid mh-100" alt="Delicious Pasta">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Pasta</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$18</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-md-6 col-lg-4">
+                <div class="card border-0 rounded-4 overflow-hidden h-100">
+                    <div class="bg-light text-center p-4 d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <img src="https://themewagon.github.io/feane/images/f9.png" class="img-fluid mh-100" alt="Delicious Burger">
+                    </div>
+                    <div class="card-body bg-dark text-white p-4 d-flex flex-column justify-content-between">
+                        <div>
+                            <h3 class="h5 card-title fw-bold">Delicious Burger</h3>
+                            <p class="text-secondary small">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam.</p>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <span class="fw-bold fs-5">$15</span>
+                            <button class="btn btn-warning rounded-circle text-white p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i class="bi bi-cart-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselexampleindicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselexampleindicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">next</span>
-    </a>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
- 
-<div class="card" style="width:400px">
-    <img class="card-img-top" src="IMAGES/burger.jpg" alt="card image">
-    <div class="card-body">
-        <h4 class="card-title">iohn doe</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corporis eveniet aspernatur doloribus, odit possimus deleniti culpa id quos. Cupiditate suscipit molestias nostrum voluptate esse, libero inventore deleniti qui dolor.</p>
-        <a href="#" class="btn btn-primary" see profile></a>
-        
-    </div>
-</div>
+    </section>
+
+    <section class="container-fluid bg-dark py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6 text-center">
+                <img src="https://themewagon.github.io/feane/images/about-img.png" alt="About Us" class="img-fluid rounded-3">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="text-white fw-bold mb-4">We are Feane</h2>
+                <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#" class="btn btn-warning rounded-pill text-white fw-medium px-5 py-2">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK TABLE SECTION -->
+    <section id="book" class="container my-5 py-5">
+        <h2 class="fst-italic fw-bold mb-4">Book A Table</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <form class="d-flex flex-column gap-3">
+                    <input type="text" class="form-control form-control-lg fs-6" placeholder="Your Name">
+                    <input type="tel" class="form-control form-control-lg fs-6" placeholder="Phone Number">
+                    <input type="email" class="form-control form-control-lg fs-6" placeholder="Your Email">
+                    <select class="form-select form-select-lg fs-6">
+                        <option selected disabled>How many persons?</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4+ Persons</option>
+                    </select>
+                    <input type="date" class="form-control form-control-lg fs-6">
+                    <div>
+                        <button type="submit" class="btn btn-warning rounded-pill text-white fw-medium px-4">Book Now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6">
+                <div class="h-100 rounded-3 overflow-hidden border">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183948721245!2d-73.98565802342557!3d40.75889597138542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 320px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-5 mb-5 text-center">
+                <div class="col-md-4">
+                    <h4 class="fst-italic fw-bold mb-4">Contact Us</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <p class="mb-0 text-white"><i class="bi bi-geo-alt-fill me-2"></i>Location</p>
+                        <p class="mb-0 text-white"><i class="bi bi-telephone-fill me-2"></i>Call +01 1234567890</p>
+                        <p class="mb-0 text-white"><i class="bi bi-envelope-fill me-2"></i>demo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fst-italic fw-bold mb-4">Feane</h3>
+                    <p class="text-white small lh-lg mb-4">Necessary injected generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-outline-light rounded-circle btn-sm"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="fst-italic fw-bold mb-4">Opening Hours</h4>
+                    <div class="d-flex flex-column gap-2">
+                        <p class="mb-0 text-white">Everyday</p>
+                        <p class="mb-0 text-white">10.00 AM - 10.00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top border-secondary text-white small">
+                &copy; 2026 All Rights Reserved By Free Html Templates
+            </div>
+        </div>
+    </footer>
+
+    <!-- Valid Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
